@@ -7,12 +7,7 @@ from __future__ import absolute_import
 
 import octoprint.plugin
 
-class WebcamTempGraph(octoprint.plugin.AssetPlugin):
-
-	def get_assets(self):
-		return dict(
-			js=["js/webcamtempgraph.js"]
-		)
+class WebcamTempGraph(octoprint.plugin.TemplatePlugin):
 
 # If you want your plugin to be registered within OctoPrint under a different name than what you defined in setup.py
 # ("OctoPrint-PluginSkeleton"), you may define that here. Same goes for the other metadata derived from setup.py that
