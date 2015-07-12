@@ -1,3 +1,3 @@
 <script type="text/javascript">
-	document.getElementById("temperature-graph").style.backgroundImage = "url("+document.getElementById("webcam_image").src+")";
+	document.getElementById("temperature-graph").style.backgroundImage = "url({{ octoprint.settings.Settings.get(['webcam','stream']) }})";
 </script>
