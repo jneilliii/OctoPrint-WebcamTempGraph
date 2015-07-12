@@ -8,6 +8,7 @@
 manually:
 
     sudo pip install https://github.com/jneilliii/OctoPrint-WebcamTempGraph/archive/master.zip
+	If using OctoPi: ~/oprint/bin/pip install https://github.com/jneilliii/OctoPrint-WebcamTempGraph/archive/master.zip
 
 ## Configuration
 
