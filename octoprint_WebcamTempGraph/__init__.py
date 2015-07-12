@@ -9,6 +9,6 @@ class WebcamTempGraph(octoprint.plugin.StartupPlugin, octoprint.plugin.TemplateP
 			
 	def get_template_vars(self):
         return dict(webcamurl=self._settings.get(["webcam","stream"]))
-
+			
 __plugin_name__ = "WebcamTempGraph"
 __plugin_implementation__ = WebcamTempGraph()
