@@ -18,7 +18,9 @@ $(function() {
 				}
             } else if (previous == "#temp") {
                 self.control._disableWebcam();
-            }
+            } else {
+				console.log(current + '|' + previous)
+			}
         };
 
         self.onStartup = function() {
