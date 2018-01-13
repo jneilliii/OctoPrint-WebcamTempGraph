@@ -12,7 +12,10 @@ $(function() {
 
         self.control.onTabChange = function (current, previous) {
             if (current == "#temp") {
-                self.control._enableWebcam();
+				if ($("#temp #webcam_container").length > 0) {					
+					$("#temp").append($("#webcam_container").detach());
+					self.control._enableWebcam();
+				}
             } else if (previous == "#temp") {
                 self.control._disableWebcam();
             }
@@ -20,6 +23,7 @@ $(function() {
 
         self.onStartup = function() {
             $("#temp").append($("#webcam_container").detach());
+            self.control._enableWebcam();
         };
     };
 
